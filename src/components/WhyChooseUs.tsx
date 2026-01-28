@@ -1,10 +1,9 @@
-import React from "react";
 import Image from "next/image";
-import whyImage1 from "../../public/image 45.png";
+// import whyImage1 from "../../public/image 45.png";
 
-import whyImage2 from "../../public/ChatGPT Image Jan 17, 2026, 05_22_25 AM.png";
+// import whyImage2 from "../../public/ChatGPT Image Jan 17, 2026, 05_22_25 AM.png";
 
-import whyImage3 from "../../public/ChatGPT Image Jan 17, 2026, 05_25_53 AM.png";
+// import whyImage3 from "../../public/ChatGPT Image Jan 17, 2026, 05_25_53 AM.png";
 
 const WhyChooseUs = () => {
   return (

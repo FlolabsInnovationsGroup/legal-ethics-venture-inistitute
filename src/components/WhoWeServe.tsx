@@ -1,10 +1,6 @@
-import React from "react";
-
 const WhoWeServe = () => {
   return (
-    <section
-      id="about"
-      className="rounded-[25px] overflow-hidden py-16 px-12 mb-4">
+    <section className="rounded-[25px] overflow-hidden py-16 px-12 mb-4">
       <p className="text-[#EDEDED] text-lg mb-8">Who We Serve</p>
       <h2 className="text-white text-[28px] font-bold mb-8">Built for Doers</h2>
       <p className="text-[#EDEDED] text-[22px] mb-16 max-w-[884px]">

@@ -1,8 +1,6 @@
-import React from "react";
-
 const JoinUs = () => {
   return (
-    <section className=" relative rounded-[25px] overflow-hidden py-16 px-12 mb-4 relative">
+    <section className=" relative rounded-[25px] overflow-hidden py-16 px-12 mb-4 ">
       {/* <svg
         className="absolute left-[104px] top-[208px]"
         width="1229"

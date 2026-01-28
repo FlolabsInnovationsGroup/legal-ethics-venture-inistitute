@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import heroImage1 from "../../public/ChatGPT Image Jan 8, 2026, 05_06_33 PM 1 (1).png";
 import heroImage2 from "../../public/ChatGPT Image Jan 17, 2026, 05_25_53 AM.png";

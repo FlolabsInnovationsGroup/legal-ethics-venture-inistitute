@@ -1,5 +1,3 @@
-import React from "react";
-
 const WhatWeOffer = () => {
   return (
     <section className="rounded-[25px] bg-black overflow-hidden py-16 px-12 mb-4">

@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Hero from "@/components/Hero";
 import Initiatives from "@/components/Initiatives";
@@ -31,20 +30,16 @@ export default function Index() {
         <WhatWeOffer />
 
         {/* Built for Doers */}
-        
-        <WhoWeServe/>
-        
-        
-                {/* Our Projects Carousel */}
 
+        <WhoWeServe />
 
-                <OurProjectsCarosal/>
-        
+        {/* Our Projects Carousel */}
+
+        <OurProjectsCarosal />
 
         {/* Join us on this Journey */}
-        
-        <JoinUs/>
-        
+
+        <JoinUs />
 
         {/* Final CTA Section */}
         <section className="rounded-[25px] bg-black overflow-hidden mb-4 relative min-h-[507px]">
@@ -69,9 +64,6 @@ export default function Index() {
             </div>
           </div>
         </section>
-
-
-  
       </main>
     </div>
   );
