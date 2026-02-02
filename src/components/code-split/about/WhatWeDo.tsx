@@ -34,10 +34,10 @@ export default function WhatWeDo() {
             {items.map((item, index) => (
               <div key={index}>
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
-                  <h3 className="text-xl md:text-2xl lg:text-[24px] font-medium text-black md:w-[210px] flex-shrink-0 leading-[1.35] tracking-[-0.48px]">
+                  <h3 className="text-xl md:text-2xl lg:text-[28px] font-medium font-medium text-black md:w-[210px] flex-shrink-0 leading-[1.35] tracking-[-0.48px]">
                     {item.title}
                   </h3>
-                  <p className="text-lg md:text-xl lg:text-[20px] text-[#464646] flex-1 leading-[1.35] tracking-[-0.4px]">
+                  <p className="text-xl md:text-2xl lg:text-[28px] font-medium text-[#464646] flex-1 leading-[1.35] tracking-[-0.4px]">
                     {item.description}
                   </p>
                 </div>

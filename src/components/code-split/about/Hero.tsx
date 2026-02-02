@@ -24,8 +24,8 @@ export default function Hero() {
           <div className="absolute inset-0 bg-black/30" />
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col justify-end h-full px-8 md:px-12 lg:px-16">
-            <h1 className="text-4xl md:text-5xl lg:text-[64px] font-medium text-white leading-tight mb-6">
+          <div className="relative z-10 flex flex-col justify-end   h-full py-10 px-8 md:px-12 lg:px-16">
+            <h1 className="text-4xl md:text-5xl lg:text-[64px] font-medium text-white leading-tight mb-4">
               Legal & Ethics Venture Institute
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-white max-w-[800px] leading-relaxed">
