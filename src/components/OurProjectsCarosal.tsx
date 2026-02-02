@@ -1,29 +1,30 @@
 "use client";
 
+import humanoidImg from "../../public/humanoid.jpeg";
+import aiBuddyImg from "../../public/Legal AI Buddy.png";
+import legalFramworkImg from "../../public/Legal & Ethics Framework Research.png";
+import experientialImg from "../../public/Experiential Ventures Pipeline for legal and ethics.jpeg";
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 
 const OurProjectsCarosal: React.FC = () => {
   const slides = useMemo(
     () => [
       {
-        src: "https://api.builder.io/api/v1/image/assets/TEMP/322ae6b8951cf54672130114c22ebd4bd80a3661?width=1600",
+        src: humanoidImg,
         alt: "Project 1",
       },
       {
-        src: "https://api.builder.io/api/v1/image/assets/TEMP/322ae6b8951cf54672130114c22ebd4bd80a3661?width=1600",
+        src: aiBuddyImg,
         alt: "Project 2",
       },
       {
-        src: "https://api.builder.io/api/v1/image/assets/TEMP/322ae6b8951cf54672130114c22ebd4bd80a3661?width=1600",
+        src: legalFramworkImg,
         alt: "Project 3",
       },
       {
-        src: "https://api.builder.io/api/v1/image/assets/TEMP/322ae6b8951cf54672130114c22ebd4bd80a3661?width=1600",
+        src: experientialImg,
         alt: "Project 4",
-      },
-      {
-        src: "https://api.builder.io/api/v1/image/assets/TEMP/322ae6b8951cf54672130114c22ebd4bd80a3661?width=1600",
-        alt: "Project 5",
       },
     ],
     [],
@@ -94,11 +95,10 @@ const OurProjectsCarosal: React.FC = () => {
                 <div
                   key={i}
                   className="min-w-full flex items-center justify-center">
-                  <img
+                  <Image
                     src={s.src}
                     alt={s.alt}
                     className="w-[800px] h-[400px] rounded-[40px] object-cover"
-                    loading="lazy"
                   />
                 </div>
               ))}

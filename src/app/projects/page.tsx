@@ -1,5 +1,5 @@
 import humanoidImg from "../../../public/humanoid.jpeg";
-import aiBuddyImg from "../../../public/Legal AI Buddy.png";
+import aiBuddyImg from "../../../public/buddy.png";
 import legalFramworkImg from "../../../public/Legal & Ethics Framework Research.png";
 import experientialImg from "../../../public/Experiential Ventures Pipeline for legal and ethics.jpeg";
 import Image from "next/image";
@@ -51,13 +51,13 @@ export default function page() {
 
           {/* Project 2 - Image Right */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-6 md:gap-10 lg:gap-20">
-            <div className="w-full lg:w-[540px] flex-shrink-0">
-              <div className="relative w-full aspect-[540/557] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
+            <div className="w-full lg:w-[600px] flex-shrink-0">
+              <div className="relative w-full h-[600px]  rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
                 <Image
                   fill
                   src={aiBuddyImg}
                   alt="Project 1 - AI Robot"
-                  className="w-full  aspect-[163/89] rounded-[30px] md:rounded-[50px] object-cover"
+                  className=" rounded-[30px] md:rounded-[50px]  "
                 />
               </div>
             </div>
@@ -77,13 +77,13 @@ export default function page() {
 
           {/* Project 3 - Image Left */}
           <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-10 lg:gap-20">
-            <div className="w-full lg:w-[540px] flex-shrink-0">
-              <div className="relative w-full aspect-[540/557] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
+            <div className="w-full lg:w-[600px] flex-shrink-0">
+              <div className="relative w-full h-[600px] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
                 <Image
                   fill
                   src={legalFramworkImg}
                   alt="Project 1 - AI Robot"
-                  className="w-full  aspect-[163/89] rounded-[30px] md:rounded-[50px] object-cover"
+                  className="w-full    rounded-[30px] md:rounded-[50px]  "
                 />
               </div>
             </div>
@@ -103,13 +103,13 @@ export default function page() {
           </div>
           {/* Project 4 - Image Right */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-6 md:gap-10 lg:gap-20">
-            <div className="w-full lg:w-[540px] flex-shrink-0">
-              <div className="relative w-full aspect-[540/557] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
+            <div className="w-full lg:w-[600px] flex-shrink-0">
+              <div className="relative w-full h-[600px] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
                 <Image
                   fill
                   src={experientialImg}
                   alt="Project 1 - AI Robot"
-                  className="w-full  aspect-[163/89] rounded-[30px] md:rounded-[50px] object-cover"
+                  className="w-full   rounded-[30px] md:rounded-[50px]   "
                 />
               </div>
             </div>
