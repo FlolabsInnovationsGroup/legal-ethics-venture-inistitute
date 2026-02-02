@@ -99,7 +99,7 @@ const Footer = () => {
     //   </div>
     // </footer>
 
-    <footer className="rounded-[25px] bg-[#1A1A1A] overflow-hidden py-14 px-7 mb-6">
+    <footer className="rounded-[25px] bg-black/80 overflow-hidden py-14 px-7 mb-6">
       <div className="flex flex-col md:flex-row justify-between gap-12">
         <div className="flex flex-col gap-6">
           <h3 className="text-white text-[28px] font-bold max-w-[366px]">

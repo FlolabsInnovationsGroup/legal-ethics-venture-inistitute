@@ -9,6 +9,7 @@ import logo from "../../public/logo.svg";
 const navigation = [
   { name: "About us", href: "/about" },
   { name: "Projects", href: "/projects" },
+  { name: "Journey", href: "/Journey" },
   {
     name: "Internships",
     href: "https://www.flolabs.international/internships",
