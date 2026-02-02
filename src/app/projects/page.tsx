@@ -1,3 +1,9 @@
+import humanoidImg from "../../../public/humanoid.jpeg";
+import aiBuddyImg from "../../../public/Legal AI Buddy.png";
+import legalFramworkImg from "../../../public/Legal & Ethics Framework Research.png";
+import experientialImg from "../../../public/Experiential Ventures Pipeline for legal and ethics.jpeg";
+import Image from "next/image";
+
 export default function page() {
   return (
     <main className=" bg-[#F6F6F6] rounded-[16px]  px-4 md:px-6 py-4 mt-[100px] mb-[50px]">
@@ -8,8 +14,10 @@ export default function page() {
             Projects
           </h1>
           <p className="text-lg md:text-xl text-[#464646] max-w-3xl">
-            A glimpse of some of our projects. The standard chunk of Lorem Ipsum
-            used since the 1500s is reproduced below for those interested.
+            A glimpse into some of the projects we’re building at the
+            intersection of AI, robotics, and responsible innovation. Each
+            initiative is designed to explore real-world impact, ethical
+            deployment, and scalable product development.
           </p>
         </div>
 
@@ -18,21 +26,25 @@ export default function page() {
           {/* Project 1 - Image Left */}
           <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-10 lg:gap-20">
             <div className="w-full lg:w-[540px] flex-shrink-0">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/68815cd6f1ebfd40f6d1ac93d49dc61cc763800e?width=2630"
-                alt="Project 1 - AI Robot"
-                className="w-full h-auto aspect-[163/89] rounded-[30px] md:rounded-[50px] object-cover"
-              />
+              <div className="relative w-full aspect-[540/557] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
+                <Image
+                  fill
+                  src={humanoidImg}
+                  alt="Project 1 - AI Robot"
+                  className="w-full  aspect-[163/89] rounded-[30px] md:rounded-[50px] object-cover"
+                />
+              </div>
             </div>
             <div className="flex-1">
               <h2 className="text-2xl md:text-[32px] font-semibold text-black mb-4 md:mb-6">
-                Project 1
+                Humanoid Legal Assistant
               </h2>
               <p className="text-lg md:text-xl text-[#464646] leading-[135%] tracking-[-0.4px]">
-                The generated Lorem Ipsum is therefore always free from
-                repetition, injected humour, or non-characteristic words etc.
-                The standard chunk of Lorem Ipsum used since the 1500s is
-                reproduced below for those interested.
+                A next-generation humanoid interface designed to support legal
+                workflows through natural conversation, document awareness, and
+                real-time reasoning. This project explores how embodied AI can
+                help users navigate complex legal contexts while maintaining
+                accuracy, transparency, and human oversight.
               </p>
             </div>
           </div>
@@ -40,54 +52,25 @@ export default function page() {
           {/* Project 2 - Image Right */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-6 md:gap-10 lg:gap-20">
             <div className="w-full lg:w-[540px] flex-shrink-0">
-              <div className="w-full aspect-[540/557] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
-                <svg
-                  width="236"
-                  height="171"
-                  viewBox="0 0 236 171"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-full max-w-[236px] h-auto">
-                  <path
-                    d="M229.304 164.979L171.65 105.972L145.008 133.239"
-                    stroke="#8E8E8E"
-                    strokeWidth="16"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M182.338 171L91.2686 80.6833L6.52148 164.731"
-                    stroke="#8E8E8E"
-                    strokeWidth="16"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M215.071 0H21.9565C10.1066 0 0.5 9.57046 0.5 21.375V149.625C0.5 161.43 10.1066 171 21.9565 171H215.071C226.921 171 236.528 161.43 236.528 149.625V21.375C236.528 9.57046 226.921 0 215.071 0Z"
-                    stroke="#8E8E8E"
-                    strokeWidth="16"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M172.5 54C177.471 54 181.5 49.9706 181.5 45C181.5 40.0294 177.471 36 172.5 36C167.529 36 163.5 40.0294 163.5 45C163.5 49.9706 167.529 54 172.5 54Z"
-                    stroke="#8E8E8E"
-                    strokeWidth="12"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+              <div className="relative w-full aspect-[540/557] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
+                <Image
+                  fill
+                  src={aiBuddyImg}
+                  alt="Project 1 - AI Robot"
+                  className="w-full  aspect-[163/89] rounded-[30px] md:rounded-[50px] object-cover"
+                />
               </div>
             </div>
             <div className="flex-1">
               <h2 className="text-2xl md:text-[32px] font-semibold text-black mb-4 md:mb-6">
-                Project 2
+                Legal AI Buddy{" "}
               </h2>
               <p className="text-lg md:text-xl text-[#464646] leading-[135%] tracking-[-0.4px]">
-                The generated Lorem Ipsum is therefore always free from
-                repetition, injected humour, or non-characteristic words etc.
-                The standard chunk of Lorem Ipsum used since the 1500s is
-                reproduced below for those interested.
+                A lightweight AI companion built to help individuals and teams
+                quickly understand legal language, summarize contracts, and
+                identify key risks. The Legal AI Buddy focuses on accessibility,
+                clarity, and practical guidance, making legal support more
+                approachable without replacing professional judgment.
               </p>
             </div>
           </div>
@@ -95,54 +78,51 @@ export default function page() {
           {/* Project 3 - Image Left */}
           <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-10 lg:gap-20">
             <div className="w-full lg:w-[540px] flex-shrink-0">
-              <div className="w-full aspect-[540/557] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
-                <svg
-                  width="236"
-                  height="171"
-                  viewBox="0 0 236 171"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-full max-w-[236px] h-auto">
-                  <path
-                    d="M229.304 164.979L171.65 105.972L145.008 133.239"
-                    stroke="#8E8E8E"
-                    strokeWidth="16"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M182.338 171L91.2686 80.6833L6.52148 164.731"
-                    stroke="#8E8E8E"
-                    strokeWidth="16"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M215.071 0H21.9565C10.1066 0 0.5 9.57046 0.5 21.375V149.625C0.5 161.43 10.1066 171 21.9565 171H215.071C226.921 171 236.528 161.43 236.528 149.625V21.375C236.528 9.57046 226.921 0 215.071 0Z"
-                    stroke="#8E8E8E"
-                    strokeWidth="16"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M172.5 54C177.471 54 181.5 49.9706 181.5 45C181.5 40.0294 177.471 36 172.5 36C167.529 36 163.5 40.0294 163.5 45C163.5 49.9706 167.529 54 172.5 54Z"
-                    stroke="#8E8E8E"
-                    strokeWidth="12"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+              <div className="relative w-full aspect-[540/557] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
+                <Image
+                  fill
+                  src={legalFramworkImg}
+                  alt="Project 1 - AI Robot"
+                  className="w-full  aspect-[163/89] rounded-[30px] md:rounded-[50px] object-cover"
+                />
               </div>
             </div>
             <div className="flex-1">
               <h2 className="text-2xl md:text-[32px] font-semibold text-black mb-4 md:mb-6">
-                Project 3
+                Legal & Ethics Framework Research
               </h2>
               <p className="text-lg md:text-xl text-[#464646] leading-[135%] tracking-[-0.4px]">
-                The generated Lorem Ipsum is therefore always free from
-                repetition, injected humour, or non-characteristic words etc.
-                The standard chunk of Lorem Ipsum used since the 1500s is
-                reproduced below for those interested.
+                A research initiative focused on developing responsible AI
+                policies, governance structures, and ethical frameworks for
+                emerging technologies. This work supports long-term
+                decision-making by defining standards for fairness, privacy,
+                accountability, and safe deployment across real-world
+                applications.
+              </p>
+            </div>
+          </div>
+          {/* Project 4 - Image Right */}
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-6 md:gap-10 lg:gap-20">
+            <div className="w-full lg:w-[540px] flex-shrink-0">
+              <div className="relative w-full aspect-[540/557] rounded-[30px] md:rounded-[50px] bg-[#B7B7B7] flex items-center justify-center p-8 md:p-12">
+                <Image
+                  fill
+                  src={experientialImg}
+                  alt="Project 1 - AI Robot"
+                  className="w-full  aspect-[163/89] rounded-[30px] md:rounded-[50px] object-cover"
+                />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h2 className="text-2xl md:text-[32px] font-semibold text-black mb-4 md:mb-6">
+                Experiential Ventures Pipeline for legal and ethics{" "}
+              </h2>
+              <p className="text-lg md:text-xl text-[#464646] leading-[135%] tracking-[-0.4px]">
+                An innovation pipeline that turns legal and ethics research into
+                real, testable ventures. This project structures idea
+                validation, prototyping, and deployment-ready development so
+                teams can build solutions that are both scalable and aligned
+                with responsible technology principles from day one.
               </p>
             </div>
           </div>
