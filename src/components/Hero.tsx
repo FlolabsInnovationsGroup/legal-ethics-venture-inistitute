@@ -145,7 +145,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative bg-black rounded-[25px] overflow-hidden mt-10 lg:mt-0">
+    <section className="relative bg-black rounded-[25px] overflow-hidden mt-10 lg:-mt-5">
       {/* Glow */}
       <div className="absolute -left-20 -top-20 w-[500px] h-[400px] lg:w-[705px] lg:h-[563px] bg-gradient-to-br from-transparent via-purple-950/50 to-transparent blur-[80px]" />
 
@@ -216,7 +216,7 @@ const Hero = () => {
         {/* RIGHT IMAGES */}
         <div className="relative w-full max-w-[500px] h-[380px] sm:h-[450px] lg:h-[569px]">
           {/* Rotated bg image */}
-          <div className="absolute left-8 sm:left-16 top-10 w-[220px] sm:w-[320px] lg:w-[450px] h-[220px] sm:h-[320px] lg:h-[450px] rotate-[-14deg]">
+          <div className="absolute left-8 sm:left-16 top-10 w-[320px] sm:w-[320px] lg:w-[450px] h-[320px] sm:h-[320px] lg:h-[450px] rotate-[-14deg]">
             <Image
               src={heroImage2}
               alt="Background"
@@ -226,7 +226,7 @@ const Hero = () => {
           </div>
 
           {/* Main image */}
-          <div className="absolute left-10 sm:left-20 top-8 w-[221px] sm:w-[320px] lg:w-[450px] h-[220px] sm:h-[320px] lg:h-[450px] rounded-[30px] overflow-hidden shadow-xl">
+          <div className="absolute left-10 sm:left-20 top-8 w-[320px] sm:w-[320px] lg:w-[450px] h-[320px] sm:h-[320px] lg:h-[450px] rounded-[30px] overflow-hidden shadow-xl">
             <Image src={heroImage1} alt="Hero" fill className="object-cover" />
           </div>
 
