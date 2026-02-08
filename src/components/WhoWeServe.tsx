@@ -1,7 +1,9 @@
 const WhoWeServe = () => {
   return (
     <section className="rounded-[25px] overflow-hidden py-16 px-12 mb-4">
-      <p className="text-[#EDEDED] text-lg mb-8">Who We Serve</p>
+      <p className="text-[#EDEDED] text-[28px] font-bold mb-16 text-center">
+        Who We Serve
+      </p>
       <h2 className="text-white text-[28px] font-bold mb-8">Built for Doers</h2>
       <p className="text-[#EDEDED] text-[22px] mb-16 max-w-[884px]">
         Whether you're exploring, building, or leading, our platform meets you
