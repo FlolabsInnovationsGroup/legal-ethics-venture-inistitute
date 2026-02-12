@@ -206,7 +206,7 @@ const Hero = () => {
           </div>
 
           {/* CTA */}
-          <Link href="https://www.flolabs.international/internships">
+          <Link href="https://hephaestus.international/internships">
             <button className="bg-[#F2784B] animate-bounce cursor-pointer hover:text-white text-black text-lg sm:text-xl font-bold px-10 sm:px-14 py-4 rounded-[35px] transition hover:opacity-90 w-fit mx-auto lg:mx-0">
               Apply Now
             </button>

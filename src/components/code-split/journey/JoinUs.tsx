@@ -48,9 +48,9 @@ const JoinUs = () => {
       </div>
 
       <div className="flex justify-center gap-8">
-        <button className="text-[22px] cursor-pointer font-bold hover:scale-110 hover:text-[#F2784B] transform duration-200 ease-in-out">
+        {/* <button className="text-[22px] cursor-pointer font-bold hover:scale-110 hover:text-[#F2784B] transform duration-200 ease-in-out">
           <Link href="/contact">Talk to Us</Link>
-        </button>
+        </button> */}
         <button className="text-[22px] animate-pulse font-bold bg-white text-black outline px-6 py-2 rounded-full cursor-pointer hover:scale-110 hover:text-[#F2784B] transform duration-200 ease-in-out">
           <Link href="https://hephaestus.international/internships/ethical-legal-research-intern">
             Apply Now

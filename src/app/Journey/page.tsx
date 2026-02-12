@@ -11,18 +11,6 @@ import OurCompass from "@/components/code-split/journey/OurCompass";
 import PathForward from "@/components/code-split/journey/PathForward";
 import Planned from "@/components/code-split/journey/Planned";
 import Initiatives from "@/components/Initiatives";
-import {
-  Map,
-  Compass,
-  Users,
-  BarChart3,
-  ArrowRight,
-  ShieldCheck,
-  FileText,
-  CheckCircle,
-} from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Journey() {
   return (
@@ -36,7 +24,7 @@ export default function Journey() {
       <Growing />
       <Initiatives />
       <Foundations />
-      =
+      
       <MileStone />
       <NotAll />
       <InMotion />

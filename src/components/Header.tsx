@@ -12,7 +12,7 @@ const navigation = [
   { name: "Journey", href: "/Journey" },
   {
     name: "Internships",
-    href: "https://www.flolabs.international/internships",
+    href: "https://hephaestus.international/internships",
   },
 ];
 
