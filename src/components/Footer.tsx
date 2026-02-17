@@ -1,104 +1,7 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
-    // <footer className="mt-20 border-t border-black/10 px-6 py-10">
-    //   <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-5">
-    //     <div>
-    //       <div className="mb-2 font-semibold">FloLabs Innovations Group</div>
-    //       <p className="text-sm opacity-80">
-    //         We build practical outcomes for innovators and builders.
-    //       </p>
-    //     </div>
-    //     <div>
-    //       <div className="mb-2 font-semibold">Company</div>
-    //       <ul className="space-y-2 text-sm opacity-80">
-    //         <li>
-    //           <a href="#careers" className="hover:underline">
-    //             Careers
-    //           </a>
-    //         </li>
-    //         <li>
-    //           <a href="#support" className="hover:underline">
-    //             Support
-    //           </a>
-    //         </li>
-    //         <li>
-    //           <a href="#contact" className="hover:underline">
-    //             Contact
-    //           </a>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //     <div>
-    //       <div className="mb-2 font-semibold">Projects</div>
-    //       <ul className="space-y-2 text-sm opacity-80">
-    //         <li>Legal Buddy</li>
-    //         <li>CAPIQ</li>
-    //         <li>Model Changer</li>
-    //         <li>Data Analytics</li>
-    //       </ul>
-    //     </div>
-    //     <div>
-    //       <div className="mb-2 font-semibold">Legal</div>
-    //       <ul className="space-y-2 text-sm opacity-80">
-    //         <li>
-    //           <a href="#terms" className="hover:underline">
-    //             Terms & Contact
-    //           </a>
-    //         </li>
-    //         <li>
-    //           <a href="#privacy" className="hover:underline">
-    //             Privacy Policy
-    //           </a>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //     <div>
-    //       <div className="mb-2 font-semibold">Follow Us</div>
-    //       <div className="flex gap-3">
-    //         <a
-    //           aria-label="LinkedIn"
-    //           href="#"
-    //           className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/5">
-    //           <svg
-    //             viewBox="0 0 24 24"
-    //             width="18"
-    //             height="18"
-    //             fill="currentColor"
-    //             className="opacity-80">
-    //             <path d="M4.98 3.5C4.98 4.61 4.1 5.5 3 5.5s-1.98-.89-1.98-2S1.9 1.5 3 1.5s1.98.89 1.98 2zM.5 8.5h5v15h-5v-15zm7.5 0h4.78v2.04h.07c.67-1.27 2.31-2.6 4.76-2.6 5.09 0 6.03 3.35 6.03 7.71v8.85h-5v-7.84c0-1.87-.03-4.29-2.61-4.29-2.61 0-3.01 2.04-3.01 4.15v7.98h-5v-16z" />
-    //           </svg>
-    //         </a>
-    //         <a
-    //           aria-label="Twitter"
-    //           href="#"
-    //           className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/5">
-    //           <svg
-    //             viewBox="0 0 24 24"
-    //             width="18"
-    //             height="18"
-    //             fill="currentColor"
-    //             className="opacity-80">
-    //             <path d="M19.633 7.997c.013.176.013.353.013.529 0 5.385-4.095 11.591-11.591 11.591-2.304 0-4.452-.676-6.255-1.844.323.038.636.051.972.051 1.91 0 3.668-.65 5.064-1.738-1.786-.038-3.291-1.216-3.81-2.839.253.038.506.064.771.064.372 0 .744-.051 1.093-.139-1.863-.372-3.268-2.016-3.268-3.993v-.051c.546.304 1.176.49 1.848.516-1.09-.729-1.81-1.977-1.81-3.391 0-.744.202-1.452.556-2.06 2.03 2.496 5.063 4.13 8.478 4.304-.064-.297-.102-.607-.102-.916 0-2.243 1.823-4.066 4.079-4.066 1.176 0 2.239.49 2.985 1.277.93-.176 1.824-.516 2.616-.972-.305.943-.943 1.736-1.786 2.243.829-.102 1.64-.317 2.375-.64-.546.816-1.237 1.534-2.032 2.1z" />
-    //           </svg>
-    //         </a>
-    //         <a
-    //           aria-label="Instagram"
-    //           href="#"
-    //           className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/5">
-    //           <svg
-    //             viewBox="0 0 24 24"
-    //             width="18"
-    //             height="18"
-    //             fill="currentColor"
-    //             className="opacity-80">
-    //             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.324.975.975 1.262 2.242 1.324 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.35 2.633-1.324 3.608-.975.975-2.242 1.262-3.608 1.324-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.35-3.608-1.324-.975-.975-1.262-2.242-1.324-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.324-3.608.975-.975 2.242-1.262 3.608-1.324C8.416 2.175 8.796 2.163 12 2.163zm0 1.837c-3.17 0-3.548.012-4.796.07-1.036.047-1.602.22-1.975.367-.497.193-.852.425-1.225.798-.373.373-.605.728-.798 1.225-.147.373-.32.939-.367 1.975-.058 1.248-.07 1.626-.07 4.796s.012 3.548.07 4.796c.047 1.036.22 1.602.367 1.975.193.497.425.852.798 1.225.373.373.728.605 1.225.798.373.147.939.32 1.975.367 1.248.058 1.626.07 4.796.07s3.548-.012 4.796-.07c1.036-.047 1.602-.22 1.975-.367.497-.193.852-.425 1.225-.798.373-.373.605-.728.798-1.225.147-.373.32-.939.367-1.975.058-1.248.07-1.626.07-4.796s-.012-3.548-.07-4.796c-.047-1.036-.22-1.602-.367-1.975-.193-.497-.425-.852-1.225-.798-.373-.147-.939-.32-1.975-.367-1.248-.058-1.626-.07-4.796-.07zm0 3.75a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5zm6.406-2.156a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-    //           </svg>
-    //         </a>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </footer>
-
     <footer className="rounded-[25px] bg-black/80 overflow-hidden py-14 px-7 mb-6">
       <div className="flex flex-col md:flex-row justify-between gap-12">
         <div className="flex flex-col gap-6">
@@ -112,58 +15,56 @@ const Footer = () => {
             <h4 className="text-white text-[26px] font-medium">Company</h4>
             <div className="flex flex-col gap-6">
               <a
-                href="#careers"
+                href="https://hephaestus.international/internships"
                 className="text-white text-lg hover:opacity-80">
-                Careers
-              </a>
-              <a
-                href="#support"
-                className="text-white text-lg hover:opacity-80">
-                Support
-              </a>
-              <a
-                href="#contact"
-                className="text-white text-lg hover:opacity-80">
-                Contact
+                Internships
               </a>
             </div>
           </div>
 
           <div className="flex flex-col gap-7">
-            <h4 className="text-white text-[26px] font-medium">Projects</h4>
+            <h4 className="text-white text-[26px] font-medium">
+              <Link href="/projects">Projects</Link>
+            </h4>
             <div className="flex flex-col gap-6">
-              <a
-                href="#legal-buddy"
+              <Link
+                href="/projects"
                 className="text-white text-lg hover:opacity-80">
-                Legal Buddy
-              </a>
-              <a href="#caipo" className="text-white text-lg hover:opacity-80">
+                <span className="text-white text-lg hover:opacity-80">
+                  Legal Buddy
+                </span>
+              </Link>
+              <Link
+                href="/projects"
+                className="text-white text-lg hover:opacity-80">
                 CAIPO
-              </a>
-              <a
-                href="#mood-changer"
+              </Link>
+              <Link
+                href="/projects"
                 className="text-white text-lg hover:opacity-80">
                 Mood Changer
-              </a>
-              <a
-                href="#data-analytics"
+              </Link>
+              <Link
+                href="/projects"
                 className="text-white text-lg hover:opacity-80">
                 Data Analytics
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="flex flex-col gap-7">
             <h4 className="text-white text-[26px] font-medium">Legal</h4>
-            <div className="flex flex-col gap-6">
-              <a href="#terms" className="text-white text-lg hover:opacity-80">
-                Terms & Contact
-              </a>
-              <a
+            <div className="flex flex-col gap-6 ">
+              <Link
+                href="/about"
+                className="text-white text-lg hover:opacity-80">
+                Who we are
+              </Link>
+              {/* <a
                 href="#privacy"
                 className="text-white text-lg hover:opacity-80">
                 Privacy Policy
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -171,8 +72,10 @@ const Footer = () => {
             <h4 className="text-white text-[26px] font-medium text-center">
               Follow Us
             </h4>
-            <div className="flex items-center gap-8">
-              <a href="#linkedin" className="hover:opacity-80">
+            <div className="flex items-center gap-8 justify-center">
+              <Link
+                href="https://www.linkedin.com/company/flo-labs-r-d/posts/?feedView=all"
+                className="hover:opacity-80">
                 <svg
                   width="34"
                   height="34"
@@ -193,8 +96,8 @@ const Footer = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
-              <a href="#twitter" className="hover:opacity-80">
+              </Link>
+              {/* <a href="#twitter" className="hover:opacity-80">
                 <svg
                   width="34"
                   height="34"
@@ -207,8 +110,8 @@ const Footer = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
-              <a href="#instagram" className="hover:opacity-80">
+              </a> */}
+              {/* <a href="#instagram" className="hover:opacity-80">
                 <svg
                   width="34"
                   height="34"
@@ -240,7 +143,7 @@ const Footer = () => {
                     </radialGradient>
                   </defs>
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
