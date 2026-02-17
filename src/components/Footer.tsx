@@ -60,11 +60,6 @@ const Footer = () => {
                 className="text-white text-lg hover:opacity-80">
                 Who we are
               </Link>
-              {/* <a
-                href="#privacy"
-                className="text-white text-lg hover:opacity-80">
-                Privacy Policy
-              </a> */}
             </div>
           </div>
 
