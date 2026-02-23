@@ -1,35 +1,4 @@
-// import React from "react";
 
-// const WeDonot = () => {
-//   return (
-//     <section className="rounded-[25px] bg-black overflow-hidden mb-4 relative min-h-[507px]">
-//       <img
-//         src="https://api.builder.io/api/v1/image/assets/TEMP/00104689936695c803cd41b4696668c945e014ae?width=2851"
-//         alt="Background"
-//         className="absolute inset-0 w-full h-full object-cover"
-//       />
-//       <div className="relative z-10 flex items-center justify-center min-h-[507px]">
-//         <div className="bg-white/20 rounded-[50px] px-[203px] py-[100px] backdrop-blur-sm">
-//           <p className="text-black text-2xl font-bold mb-5 text-center">
-//             We don't teach you to pass the bar
-//           </p>
-//           <h2 className="text-center">
-//             <span className="text-black text-[32px] font-bold">
-//               We train you to build{" "}
-//             </span>
-//             <span className="text-brand-cyan text-[42px] font-extrabold">
-//               What Comes After It!
-//             </span>
-//           </h2>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default WeDonot;
-
-// components/WeDonot.tsx
 import Image from "next/image";
 import img from "../../public/wedontImage.png";
 

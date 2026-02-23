@@ -5,7 +5,7 @@ const WhoWeServe = () => {
         Who We Serve
       </p>
       <h2 className="text-white text-[28px] font-bold mb-8">Built for Doers</h2>
-      <p className="text-[#EDEDED] text-[22px] mb-16 max-w-[884px]">
+      <p className="text-[#EDEDED] text-[22px] mb-16 max-w-full">
         Whether you're exploring, building, or leading, our platform meets you
         where you are.
       </p>
