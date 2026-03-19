@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import logo from "../../public/assets/logo.svg";
+import logo from "../../public/logo.svg";
 // import ThemeToggle from "./ThemeToggle";
 
 const navigation = [
