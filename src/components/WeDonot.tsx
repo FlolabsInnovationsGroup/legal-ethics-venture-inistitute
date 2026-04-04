@@ -9,7 +9,7 @@ export default function WeDonot() {
         relative 
         rounded-2xl sm:rounded-3xl md:rounded-[32px] 
         overflow-hidden 
-        bg-black 
+        bg-muted 
         mb-6 md:mb-8 lg:mb-10 
         min-h-[340px] xs:min-h-[380px] sm:min-h-[420px] md:min-h-[480px] lg:min-h-[507px]
       ">

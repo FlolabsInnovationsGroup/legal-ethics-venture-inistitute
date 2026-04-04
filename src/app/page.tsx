@@ -1,5 +1,4 @@
 import DoYou from "@/components/DoYou";
-import { Header } from "@/components/Header";
 import Hero from "@/components/Hero";
 import Initiatives from "@/components/Initiatives";
 import JoinUs from "@/components/JoinUs";
@@ -13,11 +12,8 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <Header />
-
-      {/* Main Content Container */}
-      <main className="max-w-[1440px] mx-auto px-6 pt-4">
+    <div className="min-h-full bg-background text-foreground">
+      <div className="mx-auto max-w-[1440px] space-y-6 px-4 pt-4 sm:space-y-8 sm:px-6 md:space-y-10">
         {/* Hero Section */}
 
         <Hero />
@@ -50,7 +46,7 @@ export default function Index() {
         <WeDonot />
 
         <DoYou />
-      </main>
+      </div>
     </div>
   );
 }

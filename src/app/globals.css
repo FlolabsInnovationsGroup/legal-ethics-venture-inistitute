@@ -3,11 +3,79 @@
 
 /** @import must precede all other statements */
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-levi-black: #050505;
+  --color-levi-dark: #0c0c0c;
+  --color-levi-ink: #171717;
+  --color-levi-red: #f2784b;
+}
+
 @tailwind utilities;
 
 @layer base {
-  
   :root {
+    --background: 40 20% 98%;
+    --foreground: 220 18% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 18% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 18% 10%;
+
+    --primary: 16 88% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 46%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 14% 92%;
+    --muted-foreground: 220 10% 38%;
+
+    --accent: 16 88% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 86%;
+    --input: 220 13% 86%;
+    --ring: 16 88% 52%;
+
+    --radius: 1.5625rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 18% 10%;
+    --sidebar-primary: 16 88% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 94%;
+    --sidebar-accent-foreground: 220 18% 10%;
+    --sidebar-border: 220 13% 86%;
+    --sidebar-ring: 16 88% 52%;
+  }
+
+  .dark {
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
@@ -36,28 +104,19 @@
     --input: 0 0% 28%;
     --ring: 16 88% 61%;
 
-    --radius: 1.5625rem;
-
     --sidebar-background: 0 0% 10%;
-
     --sidebar-foreground: 0 0% 93%;
-
     --sidebar-primary: 16 88% 61%;
-
     --sidebar-primary-foreground: 0 0% 0%;
-
     --sidebar-accent: 0 0% 17%;
-
     --sidebar-accent-foreground: 0 0% 93%;
-
     --sidebar-border: 0 0% 28%;
-
     --sidebar-ring: 16 88% 61%;
   }
 }
 
 body {
-  @apply bg-black text-white;
+  @apply bg-background text-foreground antialiased transition-colors duration-300;
   font-family:
     "Inter",
     -apple-system,
@@ -75,4 +134,40 @@ pre,
 code {
   overflow-x: auto;
   white-space: pre;
+}
+
+/* Projects page: full-width readable body, formal justified paragraphs, no mid-word/name breaks */
+.projects-formal-article h2 {
+  overflow-wrap: normal;
+  word-break: normal;
+  text-wrap: balance;
+}
+
+.projects-formal-copy p,
+.projects-formal-copy li {
+  overflow-wrap: normal;
+  word-break: normal;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  text-wrap: pretty;
+}
+
+.projects-formal-copy p {
+  text-align: justify;
+  text-align-last: left;
+}
+
+.projects-formal-copy ul {
+  list-style-position: outside;
+  padding-inline-start: 1.35em;
+}
+
+.projects-formal-copy li {
+  text-align: justify;
+  text-align-last: left;
+  padding-inline-start: 0.35em;
+}
+
+.projects-formal-copy li::marker {
+  font-weight: 600;
 }

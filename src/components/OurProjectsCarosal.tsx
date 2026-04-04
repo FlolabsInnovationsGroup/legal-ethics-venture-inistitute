@@ -1,31 +1,21 @@
 "use client";
 
-import humanoidImg from "../../public/humanoid.jpeg";
-import aiBuddyImg from "../../public/Legal AI Buddy.png";
-import legalFramworkImg from "../../public/Legal & Ethics Framework Research.png";
+import caipoImg from "../../public/buddy.png";
+import legalBuddyImg from "../../public/Legal AI Buddy.png";
+import legalFrameworkImg from "../../public/Legal & Ethics Framework Research.png";
 import experientialImg from "../../public/Experiential Ventures Pipeline for legal and ethics.jpeg";
+import humanoidImg from "../../public/humanoid.jpeg";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 
 const OurProjectsCarosal: React.FC = () => {
   const slides = useMemo(
     () => [
-      {
-        src: humanoidImg,
-        alt: "Project 1",
-      },
-      {
-        src: aiBuddyImg,
-        alt: "Project 2",
-      },
-      {
-        src: legalFramworkImg,
-        alt: "Project 3",
-      },
-      {
-        src: experientialImg,
-        alt: "Project 4",
-      },
+      { src: caipoImg, alt: "CAIPO wearable AI assistant" },
+      { src: legalBuddyImg, alt: "Legal Buddy" },
+      { src: experientialImg, alt: "Experiential Ventures Pipeline" },
+      { src: legalFrameworkImg, alt: "Ethics and Legal Framework Research" },
+      { src: humanoidImg, alt: "Humanoid robot project" },
     ],
     [],
   );
@@ -38,14 +28,12 @@ const OurProjectsCarosal: React.FC = () => {
   const prev = () =>
     setIndex((prev) => (prev - 1 + slides.length) % slides.length);
 
-  // Auto-play
   useEffect(() => {
     if (paused) return;
     const id = window.setInterval(() => next(), 5000);
     return () => window.clearInterval(id);
   }, [paused, slides.length]);
 
-  // Keyboard arrows (optional)
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") next();
@@ -55,7 +43,6 @@ const OurProjectsCarosal: React.FC = () => {
     return () => window.removeEventListener("keydown", onKey);
   }, [slides.length]);
 
-  // Touch swipe
   const startX = useRef<number | null>(null);
   const onTouchStart = (e: React.TouchEvent) => {
     startX.current = e.touches[0]?.clientX ?? null;
@@ -64,26 +51,22 @@ const OurProjectsCarosal: React.FC = () => {
     if (startX.current == null) return;
     const endX = e.changedTouches[0]?.clientX ?? startX.current;
     const diff = startX.current - endX;
-
-    // Threshold
     if (diff > 50) next();
     if (diff < -50) prev();
-
     startX.current = null;
   };
 
   return (
     <section className="rounded-[25px] overflow-hidden py-12 px-4 mb-4">
       <div className="flex flex-col items-center gap-6">
-        <h2 className="text-white text-[43px] font-bold">Our Projects</h2>
-        <p className="text-white text-lg text-center max-w-[488px] leading-[140%]">
+        <h2 className="text-[43px] font-bold text-foreground">Our Projects</h2>
+        <p className="max-w-[488px] text-center text-lg leading-[140%] text-muted-foreground">
           Few of the many projects you can work on as soon as you join
         </p>
 
         <div className="relative w-full max-w-[1428px] py-10">
-          {/* Slider */}
           <div
-            className="overflow-hidden"
+            className="overflow-hidden rounded-[40px]"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
             onTouchStart={onTouchStart}
@@ -94,18 +77,22 @@ const OurProjectsCarosal: React.FC = () => {
               {slides.map((s, i) => (
                 <div
                   key={i}
-                  className="min-w-full flex items-center justify-center">
-                  <Image
-                    src={s.src}
-                    alt={s.alt}
-                    className="w-[800px] h-[400px] rounded-[40px] object-cover"
-                  />
+                  className="min-w-full flex items-center justify-center px-1 sm:px-4">
+                  <div className="relative w-full max-w-[1100px] aspect-[16/9] sm:aspect-[2/1] rounded-[40px] overflow-hidden bg-gray-900/60 ring-1 ring-white/10">
+                    <Image
+                      src={s.src}
+                      alt={s.alt}
+                      fill
+                      sizes="(min-width: 1100px) 1100px, 100vw"
+                      className="object-cover object-center"
+                      priority={i === 0}
+                    />
+                  </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Carousel Navigation */}
           <div className="flex items-center justify-center gap-2 mt-6">
             <button
               className="p-2"
@@ -127,7 +114,7 @@ const OurProjectsCarosal: React.FC = () => {
               </svg>
             </button>
 
-            <div className="flex items-center gap-2.5">
+            <div className="flex items-center gap-2.5 flex-wrap justify-center max-w-full">
               {slides.map((_, i) => {
                 const active = i === index;
                 return (
@@ -136,7 +123,7 @@ const OurProjectsCarosal: React.FC = () => {
                     type="button"
                     aria-label={`Go to slide ${i + 1}`}
                     onClick={() => goTo(i)}
-                    className={`rounded-full transition-all ${
+                    className={`rounded-full transition-all shrink-0 ${
                       active
                         ? "w-4 h-4 bg-[#F2784B]"
                         : "w-3 h-3 bg-[#999999] opacity-50 hover:opacity-80"

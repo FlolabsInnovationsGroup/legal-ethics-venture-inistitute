@@ -16,8 +16,8 @@ import {
 export default function CheckItem({ text }: { text: string }) {
   return (
     <div className="flex items-start gap-4">
-      <CheckCircle2 className="w-6 h-6 text-levi-red flex-shrink-0 mt-1" />
-      <p className="text-lg text-gray-200 font-medium">{text}</p>
+      <CheckCircle2 className="mt-1 h-6 w-6 shrink-0 text-primary" />
+      <p className="text-lg font-medium text-foreground">{text}</p>
     </div>
   );
 }

@@ -2,10 +2,10 @@ import MilestoneCard from "./MilestoneCard";
 
 const MileStone = () => {
   return (
-    <section className="py-10 px-6 bg-gray-950 dark:bg-levi-dark border-y border-gray-200 dark:border-white/5 transition-colors">
+    <section className="py-10 px-6 bg-muted border-y border-border transition-colors">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-extrabold mb-4 text-[#1a1a1a] dark:text-white">
+          <h2 className="text-3xl font-extrabold mb-4 text-foreground">
             Key Milestones Achieved
           </h2>
         </div>

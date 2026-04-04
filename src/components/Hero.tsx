@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative bg-black rounded-[25px] overflow-hidden mt-10 lg:-mt-5">
+    <section className="relative overflow-hidden rounded-[25px] bg-background mt-10 border border-border lg:-mt-5">
       {/* Glow */}
       <div className="absolute -left-20 -top-20 w-[500px] h-[400px] lg:w-[705px] lg:h-[563px] bg-gradient-to-br from-transparent via-purple-950/50 to-transparent blur-[80px]" />
 
@@ -13,7 +13,7 @@ const Hero = () => {
         {/* LEFT */}
         <div className="flex flex-col gap-6 max-w-[650px] text-center lg:text-left">
           {/* Badge */}
-          <div className="flex  sm:flex-row items-center pr-2 gap-3 bg-black rounded-[25px]   shadow-md w-full mx-auto lg:mx-0">
+          <div className="mx-auto flex w-full flex-col items-center gap-3 rounded-[25px] bg-muted/80 pr-2 shadow-md sm:flex-row lg:mx-0">
             <div className="flex items-center gap-2 px-4 py-2 w-[200px] md:w-fit  bg-white/60 rounded-[25px]">
               <svg
                 className=""
@@ -30,23 +30,21 @@ const Hero = () => {
               <span className="text-black text-lg font-medium">Update</span>
             </div>
 
-            <span className="text-white text-base sm:text-lg">
+            <span className="text-base text-foreground sm:text-lg">
               Applications for 2026 are now open!
             </span>
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl lg:text-[46px] font-bold leading-tight tracking-wide text-white">
-            Legal & Ethics <br />
-            Ventures Institute
+          <h1 className="text-balance text-3xl font-bold leading-tight tracking-wide text-foreground sm:text-4xl lg:text-[46px]">
+            Legal &amp; Ethics Ventures Institute
           </h1>
 
-          <p className="text-[1.5em] md:text-[2em]">
-            Advance your career,
-            <span> Be at the center of the future.</span>
+          <p className="text-pretty text-[1.35em] text-foreground md:text-[1.85em]">
+            Advance your career — be at the center of the future.
           </p>
           {/* Text */}
-          <div className="flex flex-col gap-3 text-lg sm:text-xl lg:text-2xl text-white">
+          <div className="flex flex-col gap-3 text-lg text-foreground sm:text-xl lg:text-2xl">
             <span className="font-medium">
               Elevating the <span className="text-yellow-500">game</span>.
             </span>
@@ -65,10 +63,14 @@ const Hero = () => {
           </div>
 
           {/* CTA */}
-          <Link href="https://hephaestus.international/internships">
-            <button className="bg-[#F2784B] animate-bounce cursor-pointer hover:text-white text-black text-lg sm:text-xl font-bold px-10 sm:px-14 py-4 rounded-[35px] transition hover:opacity-90 w-fit mx-auto lg:mx-0">
+          <Link
+            href="https://hephaestus.international/internships"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-auto w-fit lg:mx-0">
+            <span className="inline-flex cursor-pointer rounded-[35px] bg-primary px-10 py-4 text-lg font-bold text-primary-foreground transition hover:opacity-90 animate-bounce sm:px-14 sm:text-xl">
               Apply Now
-            </button>
+            </span>
           </Link>
         </div>
 
@@ -99,8 +101,8 @@ const Hero = () => {
 
           {/* Card 2 */}
           <div className="absolute left-0 bottom-0 bg-white/80 backdrop-blur rounded-[20px] px-2 py-3 w-[210px] sm:w-[260px]">
-            <p className="text-sm sm:text-base text-black font-medium text-center">
-              Remote first, Join from anywhere.
+            <p className="text-center text-sm font-medium text-black sm:text-base">
+              Remote First, Open to the World
             </p>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import DeepDive from "@/components/code-split/journey/DeepDive";
 import Foundations from "@/components/code-split/journey/Foundations";
 import Growing from "@/components/code-split/journey/Growing";
@@ -12,9 +13,15 @@ import PathForward from "@/components/code-split/journey/PathForward";
 import Planned from "@/components/code-split/journey/Planned";
 import Initiatives from "@/components/Initiatives";
 
+export const metadata: Metadata = {
+  title: "Journey",
+  description:
+    "Explore the Legal & Ethics Ventures Institute journey — team, compass, milestones, and how we build responsibly.",
+};
+
 export default function Journey() {
   return (
-    <div className="bg-white dark:bg-black text-[#050505] dark:text-white min-h-screen font-sans transition-colors duration-300">
+    <div className="min-h-full bg-background text-foreground font-sans transition-colors duration-300">
       {/* 1. HERO */}
       <Hero />
       {/* 2. MEET THE TEAM */}

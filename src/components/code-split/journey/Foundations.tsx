@@ -66,7 +66,7 @@ import React from "react";
 
 const Foundations = () => {
   return (
-    <section className="py-10 md:py-12 lg:py-16 px-5 sm:px-6 lg:px-8 bg-gray-950 text-white">
+    <section className="bg-muted px-5 py-10 text-foreground sm:px-6 md:py-12 lg:px-8 lg:py-16">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 lg:mb-16">

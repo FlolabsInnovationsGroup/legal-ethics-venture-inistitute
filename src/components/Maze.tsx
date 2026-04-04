@@ -68,7 +68,7 @@ import openDoor from "../../public/assets/opendoor.jpg";
 
 const Maze = () => {
   return (
-    <section className="py-12 md:py-16 my-10 bg-gray-950 rounded-2xl">
+    <section className="my-10 rounded-2xl border border-border bg-muted py-12 md:py-16">
       <div className="max-w-5xl mx-auto px-4">
         <p className="text-gray-200 text-3xl md:text-4xl font-bold text-center mb-12">
           Where the legal world is a maze...
@@ -87,11 +87,11 @@ const Maze = () => {
               priority
             />
 
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-foreground/55" />
 
             <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
               <div className="max-w-xl">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                <h3 className="mb-4 text-2xl font-bold text-white md:text-3xl">
                   Breaking in shouldn't be harder than{" "}
                   <span className="text-[#F2784B]">learning...</span>
                 </h3>
@@ -126,7 +126,7 @@ const Maze = () => {
               className="object-cover"
             />
 
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-foreground/55" />
 
             <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
               <div className="max-w-2xl">

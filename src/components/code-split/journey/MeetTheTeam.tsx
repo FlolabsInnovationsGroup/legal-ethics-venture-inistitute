@@ -4,14 +4,14 @@ import TeamPoint from "./TeamPoint";
 
 const MeetTheTeam = () => {
   return (
-    <section className="py-10 px-6 bg-gray-950 dark:bg-levi-dark transition-colors">
+    <section className="py-10 px-6 bg-muted transition-colors">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-[#1a1a1a] dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-foreground">
               Meet the Team
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               We are a collaborative, welcoming legal intern team working at the
               dynamic intersection of{" "}
               <span className="text-[#F2784B]">artificial intelligence</span>,{" "}
@@ -36,7 +36,7 @@ const MeetTheTeam = () => {
             </div>
           </div>
 
-          <div className="relative h-[400px] w-full rounded-2xl overflow-hidden border border-gray-200 dark:border-white/10">
+          <div className="relative h-[400px] w-full rounded-2xl overflow-hidden border border-border">
             <Image
               src="/assets/statue.jpg"
               alt="Team Collaboration"

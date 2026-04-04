@@ -4,7 +4,7 @@ import { Compass } from "lucide-react";
 
 const OurCompass = () => {
   return (
-    <section className="relative py-10 md:py-24 lg:py-28 px-5 sm:px-6 lg:px-8 min-h-[700px] md:min-h-[800px] overflow-hidden bg-gray-950">
+    <section className="relative min-h-[700px] overflow-hidden bg-muted px-5 py-10 sm:px-6 md:min-h-[800px] md:py-24 lg:px-8 lg:py-28">
       {/* Background Video */}
       {/* <video
         autoPlay
@@ -34,7 +34,7 @@ const OurCompass = () => {
                 strokeWidth={1.7}
               />
             </div>
-            <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold text-foreground tracking-tight">
               Our Compass
             </h2>
           </div>
@@ -46,7 +46,7 @@ const OurCompass = () => {
           </p>
 
           {/* العنوان الفرعي */}
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white pt-4 md:pt-6">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground pt-4 md:pt-6">
             We focus on:
           </h3>
 
@@ -75,7 +75,7 @@ const OurCompass = () => {
                   <span className="h-3 w-3 rounded-full bg-cyan-400" />
                 </span>
 
-                <span className="font-semibold text-white text-lg sm:text-xl tracking-tight block">
+                <span className="font-semibold text-foreground text-lg sm:text-xl tracking-tight block">
                   {item.title}
                 </span>
                 {item.desc && (

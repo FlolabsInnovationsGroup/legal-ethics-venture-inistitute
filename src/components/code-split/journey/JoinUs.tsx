@@ -3,11 +3,11 @@ import logo from "../../../../public/logo.svg";
 import Image from "next/image";
 const JoinUs = () => {
   return (
-    <section className="py-10 px-6 text-center bg-gray-950 my-5">
-      <h2 className="text-5xl font-extrabold mb-8 text-[#1a1a1a] dark:text-white">
+    <section className="my-5 border-y border-border bg-muted px-6 py-10 text-center">
+      <h2 className="text-5xl font-extrabold mb-8 text-foreground">
         Join Us on This Journey
       </h2>
-      <div className="flex flex-col gap-5 mb-10 text-[20px]">
+      <div className="mb-10 flex flex-col gap-5 text-[20px] text-foreground">
         <p className="text-[#F2784B]">
           Take action. Make impact. Lead responsibly.
         </p>
@@ -51,8 +51,11 @@ const JoinUs = () => {
         {/* <button className="text-[22px] cursor-pointer font-bold hover:scale-110 hover:text-[#F2784B] transform duration-200 ease-in-out">
           <Link href="/contact">Talk to Us</Link>
         </button> */}
-        <button className="text-[22px] animate-pulse font-bold bg-white text-black outline px-6 py-2 rounded-full cursor-pointer hover:scale-110 hover:text-[#F2784B] transform duration-200 ease-in-out">
-          <Link href="https://hephaestus.international/internships/ethical-legal-research-intern">
+        <button className="cursor-pointer rounded-full border border-border bg-card px-6 py-2 text-[22px] font-bold text-foreground outline-none transition-transform duration-200 ease-in-out animate-pulse hover:scale-110 hover:text-primary">
+          <Link
+            href="https://hephaestus.international/internships/ethical-legal-research-intern"
+            target="_blank"
+            rel="noopener noreferrer">
             Apply Now
           </Link>
         </button>

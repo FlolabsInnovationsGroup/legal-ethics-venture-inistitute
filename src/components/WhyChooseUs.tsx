@@ -1,46 +1,46 @@
 const WhyChooseUs = () => {
   return (
-    <section className="py-24 px-6 bg-gray-950  rounded-[25px]  dark:bg-levi-black border-b border-gray-200 dark:border-white/5 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <section className="rounded-[25px] border-b border-border bg-muted px-6 py-24 transition-colors duration-300">
+      <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2 items-center">
         <div className="space-y-8">
-          <h2 className="text-4xl font-extrabold text-levi-ink dark:text-white mb-8 transition-colors duration-300">
+          <h2 className="mb-8 text-4xl font-extrabold text-foreground transition-colors duration-300">
             We Are ...
           </h2>
           <div className="space-y-4">
-            <div className="flex items-center gap-4 text-2xl md:text-3xl font-bold text-gray-400 dark:text-gray-600">
-              <span className="text-[#F2784B]">Not</span>{" "}
-              <span className=" text-white">A Law School.</span>
+            <div className="flex items-center gap-4 text-2xl font-bold text-muted-foreground md:text-3xl">
+              <span className="text-primary">Not</span>{" "}
+              <span className="text-foreground">A Law School.</span>
             </div>
-            <div className="flex items-center gap-4 text-2xl md:text-3xl font-bold text-gray-400 dark:text-gray-600">
-              <span className="text-[#F2784B]">Not</span>{" "}
-              <span className=" text-white">A Clinic.</span>
+            <div className="flex items-center gap-4 text-2xl font-bold text-muted-foreground md:text-3xl">
+              <span className="text-primary">Not</span>{" "}
+              <span className="text-foreground">A Clinic.</span>
             </div>
-            <div className="flex items-center gap-4 text-2xl md:text-3xl font-bold text-gray-400 dark:text-gray-600">
-              <span className="text-[#F2784B]">Not</span>{" "}
-              <span className=" text-white">A Bootcamp.</span>
+            <div className="flex items-center gap-4 text-2xl font-bold text-muted-foreground md:text-3xl">
+              <span className="text-primary">Not</span>{" "}
+              <span className="text-foreground">A Bootcamp.</span>
             </div>
           </div>
         </div>
 
-        <div className="relative p-10 rounded-3xl bg-gradient-to-br from-levi-red/10 to-transparent border border-levi-red/20">
-          <h3 className="text-3xl md:text-4xl font-extrabold text-levi-ink dark:text-white mb-6 transition-colors duration-300">
+        <div className="relative rounded-3xl border border-primary/25 bg-gradient-to-br from-primary/10 to-transparent p-10">
+          <h3 className="mb-6 text-3xl font-extrabold text-foreground transition-colors duration-300 md:text-4xl">
             But A Legal & Ethics <br />
-            <span className="text-levi-red">
-              Ventures <span className="text-[#F2784B]">Institute.</span>
+            <span className="text-primary">
+              Ventures <span className="text-primary">Institute.</span>
             </span>
           </h3>
-          <div className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6 transition-colors duration-300">
+          <div className="mb-6 text-lg leading-relaxed text-muted-foreground transition-colors duration-300">
             Where curiosity meets courage.
             <hr className="my-2" />
             <p>
               For{" "}
-              <span className="text-[#F2784B]">
+              <span className="text-primary">
                 students, career changers, international learners, innovators
               </span>
               - all welcome here.
             </p>
           </div>
-          <div className="h-1 w-20 bg-levi-red rounded-full" />
+          <div className="h-1 w-20 rounded-full bg-primary" />
         </div>
       </div>
     </section>

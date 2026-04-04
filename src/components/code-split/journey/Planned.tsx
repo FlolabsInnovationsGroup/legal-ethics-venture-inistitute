@@ -3,10 +3,10 @@ import TimelineItem from "./TimelineItem";
 
 const Planned = () => {
   return (
-    <section className="py-10 px-6 bg-gray-950 dark:bg-levi-black transition-colors">
+    <section className="py-10 px-6 bg-muted transition-colors">
       <div className="max-w-4xl mx-auto">
         <div className="text-center text-[22px] mb-20 flex flex-col gap-3">
-          <h2 className="text-4xl font-extrabold mb-4 text-[#1a1a1a] dark:text-white">
+          <h2 className="text-4xl font-extrabold mb-4 text-foreground">
             Planned & Ready: A Timeline of the Next 12 Months
           </h2>
           <p className="text-gray-100 ">
