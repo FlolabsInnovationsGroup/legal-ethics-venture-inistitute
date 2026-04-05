@@ -126,7 +126,7 @@ const Maze = () => {
               className="object-cover"
             />
 
-            <div className="absolute inset-0 bg-foreground/55" />
+            <div className="absolute inset-0 " />
 
             <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
               <div className="max-w-2xl">
