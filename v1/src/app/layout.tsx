@@ -4,6 +4,12 @@ import Script from "next/script";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
+import {
+  GOOGLE_SITE_VERIFICATION,
+  GTM_ID,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +21,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_NAME = "Legal & Ethics Ventures Institute";
-
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_NAME,
     template: `%s | ${SITE_NAME}`,
@@ -25,6 +30,13 @@ export const metadata: Metadata = {
   description:
     "Legal & Ethics Ventures Institute — hands-on legal tech, ethics, and AI ventures. Remote first, open to the world.",
   applicationName: SITE_NAME,
+  verification: {
+    google: GOOGLE_SITE_VERIFICATION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: [{ url: "/logo.svg", type: "image/svg+xml" }],
     apple: [{ url: "/logo.svg", type: "image/svg+xml" }],
@@ -35,6 +47,7 @@ export const metadata: Metadata = {
       "Hands-on legal tech, ethics, and AI ventures. Remote first, open to the world.",
     siteName: SITE_NAME,
     type: "website",
+    url: SITE_URL,
   },
   twitter: {
     card: "summary",
@@ -51,8 +64,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${GTM_ID}');`,
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} flex min-h-screen flex-col px-3 sm:px-4`}>
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+          />
+        </noscript>
         <Script
           id="theme-init"
           strategy="beforeInteractive"
